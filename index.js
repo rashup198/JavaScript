@@ -109,3 +109,13 @@ console.log(myStr.slice(1,6));
 f= myStr.replace("rashu", "pandey")
 
 console.log(f);
+
+
+// dates in js
+
+let myDate = new Date();
+console.log(myDate.getTime());
+console.log(myDate.getDay());
+
+console.log(myDate.getFullYear());
+console.log(myDate.getMinutes());
