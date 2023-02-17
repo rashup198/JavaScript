@@ -93,3 +93,19 @@ do{
     console.log(y);
     y++;
 }while(y<10);
+
+
+
+// string method in js
+
+let myStr= "My name is rashu"
+
+console.log(myStr.length);
+console.log(myStr.indexOf("rashu"));
+
+
+console.log(myStr.slice(1,6));
+
+f= myStr.replace("rashu", "pandey")
+
+console.log(f);
