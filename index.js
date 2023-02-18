@@ -229,4 +229,14 @@ do{
 }
 while(j<arr.length);
 
-// breake and contionious statements
+// js setTimeout and setInterval
+summ=(a,b) => {
+  return a+b;  
+};
+
+logkaro=()=>{
+  console.log("I am you log ");  
+}
+setTimeout(logkaro,  2000)
+
+setInterval(logkaro, 2000)
