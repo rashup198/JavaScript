@@ -53,9 +53,9 @@ console.log(ans4);
 
 
 // 
-age = 17;
-let status = (age >= 18) ? "you can vote" : 'you can not vote'
-console.log(status);
+// age = 17;
+// let status = (age >= 18) ? "you can vote" : 'you can not vote'
+// console.log(status);
 
 
 //  else if
@@ -119,3 +119,82 @@ console.log(myDate.getDay());
 
 console.log(myDate.getFullYear());
 console.log(myDate.getMinutes());
+
+
+// datatypes
+
+var str1= "this is a string";
+var str2='this is a string';
+
+var num1= 442;
+var num2= 43.32;
+
+var marksScie={
+    ravi:35,
+    shubham:78,
+    rashu:98
+
+}
+
+
+console.log(marksScie);
+var d= null;
+
+console.log(d);
+
+
+var arr=[1,2,3,3,423,324,234,234234];
+console.log(arr);
+console.log(arr.length)
+
+console.log(arr[5]);
+
+
+// comparision operator
+
+var x=98;
+var b= 78;
+
+console.log(x==b);
+console.log(x>=b);
+console.log(x<=b);
+console.log(x>b);
+console.log(x<b);
+
+// functions
+
+
+function avg(a,b){
+    return(a+b)/2;
+}
+
+num3= avg(3,4);
+
+num4= avg(5,8);
+
+num5= avg(8,9);
+num6= avg(6,2);
+console.log(num3);
+
+console.log(num4);
+console.log(num5);
+console.log(num6);
+
+
+// conditional statements in js
+
+let age=26;
+
+if(age==18){
+    console.log("You are not a kid");
+}
+
+else if(age>=25){
+    console.log("What do you do for living");
+}
+else{
+    console.log("You are a Kid");
+}
+
+
+
