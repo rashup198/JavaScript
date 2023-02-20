@@ -230,13 +230,39 @@ do{
 while(j<arr.length);
 
 // js setTimeout and setInterval
-summ=(a,b) => {
-  return a+b;  
+// summ=(a,b) => {
+//   return a+b;  
+// };
+
+// logkaro=()=>{
+//   console.log("I am you log ");  
+// }
+// setTimeout(logkaro,  2000)
+
+// setInterval(logkaro, 2000)
+
+
+let  rect={
+    lenght:1,
+    breadth:4,
+
+    draw: function(){
+        console.log('drawing a rectangle');
+    }
 };
 
-logkaro=()=>{
-  console.log("I am you log ");  
-}
-setTimeout(logkaro,  2000)
+// factory function
 
-setInterval(logkaro, 2000)
+function createRectangle(){
+    let  rect={
+        lenght:1,
+        breadth:4,
+    
+        draw: function(){
+            console.log('drawing a rectangle');
+        }
+    };
+    return rect;
+}
+
+let rectangleobj1 = createRectangle();
