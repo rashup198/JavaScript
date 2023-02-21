@@ -253,16 +253,28 @@ let  rect={
 
 // factory function
 
-function createRectangle(){
-    let  rect={
-        lenght:1,
-        breadth:4,
+// function createRectangle(){
+//     let  rect={
+//         lenght:1,
+//         breadth:4,
     
-        draw: function(){
-            console.log('drawing a rectangle');
-        }
-    };
-    return rect;
+//         draw: function(){
+//             console.log('drawing a rectangle');
+//         }
+//     };
+//     return rect;
+// }
+
+// let rectangleobj1 = createRectangle();
+
+// constructor function
+
+function rectangle ()  {
+    this.length = 1;
+    this.breadth =4;
+    this.draw= function(){
+        console.log('drawing');
+    }
 }
 
-let rectangleobj1 = createRectangle();
+let rectangleobj = new rectangle();
