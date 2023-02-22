@@ -323,3 +323,26 @@ const dist={
 }
 console.log(dist.yakka);
 console.log(dist.tocix);
+
+
+
+let age1= prompt("hey what is your age? ")
+
+ age1= Number.parseInt(age1)
+
+ console.log(typeof age1);
+
+ if(age1<0){
+     console.log("this is not a valid age");
+    }
+    else if(age1<9){
+        console.log("dont drive");
+    }
+
+    else if(age1<18 && age1>9){
+        console.log("wait for some time");
+    }
+
+    else{
+     console.log("this is a valid age");
+  }
