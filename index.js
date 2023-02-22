@@ -229,17 +229,17 @@ do{
 }
 while(j<arr.length);
 
-// js setTimeout and setInterval
-// summ=(a,b) => {
-//   return a+b;  
-// };
+js setTimeout and setInterval
+summ=(a,b) => {
+  return a+b;  
+};
 
-// logkaro=()=>{
-//   console.log("I am you log ");  
-// }
-// setTimeout(logkaro,  2000)
+logkaro=()=>{
+  console.log("I am you log ");  
+}
+setTimeout(logkaro,  2000)
 
-// setInterval(logkaro, 2000)
+setInterval(logkaro, 2000)
 
 
 let  rect={
@@ -253,34 +253,34 @@ let  rect={
 
 // factory function
 
-// function createRectangle(){
-//     let  rect={
-//         lenght:1,
-//         breadth:4,
+function createRectangle(){
+    let  rect={
+        lenght:1,
+        breadth:4,
     
-//         draw: function(){
-//             console.log('drawing a rectangle');
-//         }
-//     };
-//     return rect;
-// }
+        draw: function(){
+            console.log('drawing a rectangle');
+        }
+    };
+    return rect;
+}
 
-// let rectangleobj1 = createRectangle();
+let rectangleobj1 = createRectangle();
 
-// constructor function
+constructor function
 
-// function rectangle ()  {
-//     this.length = 1;
-//     this.breadth =4;
-//     this.draw= function(){
-//         console.log('drawing');
-//     }
-// }
+function rectangle ()  {
+    this.length = 1;
+    this.breadth =4;
+    this.draw= function(){
+        console.log('drawing');
+    }
+}
 
-// let rectangleobj = new rectangle();
+let rectangleobj = new rectangle();
 
 
-// practice set
+practice set
 
 // chapter q1
  let sub1 = "harry"
@@ -326,70 +326,70 @@ console.log(dist.tocix);
 
 
 
-// let age1= prompt("hey what is your age? ")
+let age1= prompt("hey what is your age? ")
 
-//  age1= Number.parseInt(age1)
+ age1= Number.parseInt(age1)
 
-//  console.log(typeof age1);
+ console.log(typeof age1);
 
-//  if(age1<0){
-//      console.log("this is not a valid age");
-//     }
-//     else if(age1<9){
-//         console.log("dont drive");
-//     }
+ if(age1<0){
+     console.log("this is not a valid age");
+    }
+    else if(age1<9){
+        console.log("dont drive");
+    }
 
-//     else if(age1<18 && age1>9){
-//         console.log("wait for some time");
-//     }
+    else if(age1<18 && age1>9){
+        console.log("wait for some time");
+    }
 
-//     else{
-//      console.log("this is a valid age");
-//   }
-
-
-//   chapter 2 q1
-
-// let inp_age= prompt("what is your age??")
-
-// inp_age= Number.parseInt(inp_age);
-
-// if(inp_age>10 && inp_age<20){
-//     console.log("Your age lies b/w 10 and 20");
-// }
-// else{
-//     console.log("Your age does not lies b/w 10 and 20");
-// }
+    else{
+     console.log("this is a valid age");
+  }
 
 
-// q2
+  chapter 2 q1
 
-// let inp_age1= prompt("what is your age??")
-// inp_age1= Number.parseInt(inp_age1);
+let inp_age= prompt("what is your age??")
 
-// switch(inp_age1){
-//     case 12:
-//         console.log("your age is 12");
-//     break
-//         case 14:
-//         console.log("your age is 14");
-//         break
-//         case 17:
-//         console.log("your age is 17");
-//         break
-//         case 121:
-//         console.log("your age is 121");
-//         break
-//         case 123:
-//         console.log("your age is 123");
-//         break
-//         default:
-//             console.log("your age is not special");
-//             break
-// }
+inp_age= Number.parseInt(inp_age);
+
+if(inp_age>10 && inp_age<20){
+    console.log("Your age lies b/w 10 and 20");
+}
+else{
+    console.log("Your age does not lies b/w 10 and 20");
+}
 
 
-// q3
+q2
+
+let inp_age1= prompt("what is your age??")
+inp_age1= Number.parseInt(inp_age1);
+
+switch(inp_age1){
+    case 12:
+        console.log("your age is 12");
+    break
+        case 14:
+        console.log("your age is 14");
+        break
+        case 17:
+        console.log("your age is 17");
+        break
+        case 121:
+        console.log("your age is 121");
+        break
+        case 123:
+        console.log("your age is 123");
+        break
+        default:
+            console.log("your age is not special");
+            break
+}
+
+
+q3
 
 let inp_num= prompt("what is the number??")
 inp_num= Number.parseInt(inp_num);
@@ -403,6 +403,31 @@ else if(inp_num%2==0 || inp_num%3==0){
 }
 else{
     console.log("your num is not divisible by 2 and 3");
+}
+
+
+
+
+let obj={
+    rashu:45,
+    riya:46,
+    sampuu:47
+}
+for(let a1 in obj){
+    console.log(obj[a1]);
+}
+
+for(let b1 of "RAHSU"){
+    console.log(b1);
+}
+
+
+let inp_num= prompt("what is the number??")
+inp_num= Number.parseInt(inp_num);
+let i=0;
+while(i<inp_num){
+    console.log(i);
+    i++;
 }
 
 
