@@ -326,23 +326,83 @@ console.log(dist.tocix);
 
 
 
-let age1= prompt("hey what is your age? ")
+// let age1= prompt("hey what is your age? ")
 
- age1= Number.parseInt(age1)
+//  age1= Number.parseInt(age1)
 
- console.log(typeof age1);
+//  console.log(typeof age1);
 
- if(age1<0){
-     console.log("this is not a valid age");
-    }
-    else if(age1<9){
-        console.log("dont drive");
-    }
+//  if(age1<0){
+//      console.log("this is not a valid age");
+//     }
+//     else if(age1<9){
+//         console.log("dont drive");
+//     }
 
-    else if(age1<18 && age1>9){
-        console.log("wait for some time");
-    }
+//     else if(age1<18 && age1>9){
+//         console.log("wait for some time");
+//     }
 
-    else{
-     console.log("this is a valid age");
-  }
+//     else{
+//      console.log("this is a valid age");
+//   }
+
+
+//   chapter 2 q1
+
+// let inp_age= prompt("what is your age??")
+
+// inp_age= Number.parseInt(inp_age);
+
+// if(inp_age>10 && inp_age<20){
+//     console.log("Your age lies b/w 10 and 20");
+// }
+// else{
+//     console.log("Your age does not lies b/w 10 and 20");
+// }
+
+
+// q2
+
+// let inp_age1= prompt("what is your age??")
+// inp_age1= Number.parseInt(inp_age1);
+
+// switch(inp_age1){
+//     case 12:
+//         console.log("your age is 12");
+//     break
+//         case 14:
+//         console.log("your age is 14");
+//         break
+//         case 17:
+//         console.log("your age is 17");
+//         break
+//         case 121:
+//         console.log("your age is 121");
+//         break
+//         case 123:
+//         console.log("your age is 123");
+//         break
+//         default:
+//             console.log("your age is not special");
+//             break
+// }
+
+
+// q3
+
+let inp_num= prompt("what is the number??")
+inp_num= Number.parseInt(inp_num);
+
+
+if(inp_num%2==0 && inp_num%3==0){
+    console.log("your num is divisible by 2 and 3");
+}
+else if(inp_num%2==0 || inp_num%3==0){
+    console.log("your number is either divisible by 2 or 3");
+}
+else{
+    console.log("your num is not divisible by 2 and 3");
+}
+
+
