@@ -269,12 +269,57 @@ let  rect={
 
 // constructor function
 
-function rectangle ()  {
-    this.length = 1;
-    this.breadth =4;
-    this.draw= function(){
-        console.log('drawing');
-    }
+// function rectangle ()  {
+//     this.length = 1;
+//     this.breadth =4;
+//     this.draw= function(){
+//         console.log('drawing');
+//     }
+// }
+
+// let rectangleobj = new rectangle();
+
+
+// practice set
+
+// chapter q1
+ let sub1 = "harry"
+
+ let sub2 = 8;
+
+ console.log(sub1+ sub2);
+
+//  q2
+
+console.log(typeof (sub1+sub2));
+
+// q3
+
+
+const some ={
+    name:"rashu",
+    section:1,
+    isprincipal:false
+
 }
 
-let rectangleobj = new rectangle();
+// q4
+
+
+some['friend']= "subham"
+some['name']= "rohit"
+console.log(some);
+
+
+// q5
+
+const dist={
+
+    appreciate: "recognize the full worth of",
+    worthy:"Something very valuable",
+    tocix:"something hazourdous",
+    yakka:"to do hard work"
+
+}
+console.log(dist.yakka);
+console.log(dist.tocix);
