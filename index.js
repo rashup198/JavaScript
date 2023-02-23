@@ -508,3 +508,13 @@ console.log(sentance);
 
 let fal = 'bana\'na'
 console.log(fal);
+
+let fr="rashu";
+
+for(i=0; i<fr.length; i++ ){
+    console.log(fr[i]);
+}
+
+for (let key in fr) {
+    console.log(fr[key]);
+}
