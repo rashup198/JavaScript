@@ -488,3 +488,23 @@ const mean = (a,b,c,d)=>{
 }
 
 console.log("the mean of the numbers is "+ mean(3,4,6,7));
+
+let name= "rashu";
+console.log(name.length);
+
+
+
+// template litrals
+
+let boy1= "rashu";
+let boy2 ="aakash";
+
+let sentance =`${boy2} is the friend of ${boy1}`
+
+console.log(sentance);
+
+
+// escape sequense character
+
+let fal = 'bana\'na'
+console.log(fal);
