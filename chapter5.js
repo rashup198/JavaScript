@@ -55,3 +55,5 @@ let a4= arr4.reduce((x1,x2)=>{
     return x1*x2
 })
 console.log(a4);
+
+
