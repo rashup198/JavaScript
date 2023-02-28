@@ -16,3 +16,13 @@ function x(){
     y();
 }
 x();
+
+
+function d(){
+    var i=2;
+    setTimeout(function () {
+        console.log(i);
+    }, 3000);
+    console.log("namaste javaScript");
+}
+d();
