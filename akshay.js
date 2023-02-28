@@ -6,3 +6,13 @@ function b(){
 }
 
 console.log(window.a);
+
+function x(){
+    var a= 7;
+
+    function y(){
+        console.log(a);
+    }
+    y();
+}
+x();
