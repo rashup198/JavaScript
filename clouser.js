@@ -32,3 +32,4 @@ this.decrementCounter = function (){
 
 var counter1= new Counter();
 counter1.incrementCounter();
+  
