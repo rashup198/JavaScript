@@ -1,0 +1,19 @@
+html , body{
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+ul{
+    display: flex;
+    background: grey;
+    gap: 20px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+ul li{
+    list-style: none;
+    
+}
