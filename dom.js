@@ -1,9 +1,9 @@
-const changeBodyRed =()=>{
+let t = document.body.firstElementChild.firstElementChild
 
-    document.body.firstElementChild.style.background = "red"
-}
+console.log(t);
 
-let b= document.body;
-
-console.log("first child of b is: ",  b.firstChild);
-console.log("firt element of child of b is : " , b.firstElementChild);
+console.log(t.rows);
+console.log(t.caption);
+console.log(t.tHead.firstElementChild);
+console.log(t.tFoot);
+console.log(t.tBody);
