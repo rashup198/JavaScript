@@ -5,7 +5,7 @@ margin: 0;
 padding: 0;
 }
 
-ul{
+nav{
     display: flex;
     background: grey;
     gap: 20px;
@@ -13,7 +13,7 @@ ul{
     padding: 10px 0px;
 }
 
-ul li{
+nav li{
     list-style: none;
-    
+    padding: 0 23px;
 }
