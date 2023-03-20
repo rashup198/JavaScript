@@ -26,6 +26,11 @@ console.log(promise);
 //  print downloading
 //  rest of the script
 
+
+// then and catch
+
+
+
 let p1 = new Promise((resolve, reject)=>{
     console.log("Promise is pending");
 
@@ -52,4 +57,27 @@ p1.then((value)=>{
 
 p2.catch((Error)=>{
     console.log("Some error in p2");
+})
+
+
+// mutiple then
+
+
+let p3 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        console.log("resolved after 2 second");
+        resolve(56)
+    }, 2000)
+})
+
+p3.then((value)=>{
+    console.log(value);
+    let p4= new Promise((resolve, reject)=>{
+        setTimeout(() => {resolve("promise 2")
+            
+        }, 2000);
+    })
+    return p2
+}).then((value)=>{
+    console.log("we are done");
 })
