@@ -12,43 +12,43 @@ const loadScrit = async (src)=>{
 }
 // problem1 
 
-// let a= loadScrit("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js")
+let a= loadScrit("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js")
 
-// a.then((value)=>{
-//   console.log(value);  
-// })
+a.then((value)=>{
+  console.log(value);  
+})
  
 // problem2
 
-// const main2= async()=>{
-//     console.log(new Date().getMilliseconds());
-//     let a=await loadScrit("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js")
-//     console.log(a);
-//     console.log(new Date().getMilliseconds());
-// }
-// main2()
+const main2= async()=>{
+    console.log(new Date().getMilliseconds());
+    let a=await loadScrit("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js")
+    console.log(a);
+    console.log(new Date().getMilliseconds());
+}
+main2()
 
 
 // problem 3
 
-// let p= ()=>{
-//    return new Promise((resolve, reject)=>{
-//     setTimeout(() => {
-//         reject(new Error("Plesase this is not accepted"))
-//     }, 3000);
-// })
-// }
-// let a = async ()=>{
+let p= ()=>{
+   return new Promise((resolve, reject)=>{
+    setTimeout(() => {
+        reject(new Error("Plesase this is not accepted"))
+    }, 3000);
+})
+}
+let a = async ()=>{
 
-//     try {
-//         let c= await p()
-//         console.log(c);
+    try {
+        let c= await p()
+        console.log(c);
         
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
-// a();
+    } catch (error) {
+        console.log(error);
+    }
+}
+a();
 
 
 // problem 4
