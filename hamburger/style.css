@@ -9,12 +9,18 @@ header{
 }
 
 li{list-style: none;
-
+    margin-top: 10px;
+    
 }
 
-a{
-    color: white;
+li a{
+    font-size: larger;
+    
+    
     text-decoration: none;
+}
+a{
+  
 }
 .navbar{
     min-height: 70px;
@@ -39,7 +45,8 @@ a{
 }
 
 .nav-link{
-    color: dodgerblue;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 .hamburger{
@@ -55,4 +62,39 @@ a{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
+}
+
+@media(max-width:786px){
+.hamburger{
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-menu{
+    margin: 16px 0;
+}
+
+.nav-menu.active{
+    left: 0;
+}
 }
