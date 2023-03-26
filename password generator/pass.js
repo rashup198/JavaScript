@@ -31,7 +31,7 @@ function handleSlider(){
     
 }
 
-function setIndicator(){
+function setIndicator(color){
     indicator.style.backgroundColor= color;
 }
 
@@ -105,7 +105,7 @@ setTimeout( () => {
 
 function shuffelPassword(Array){
     //fisher yates Method
-    for (let i =a.length-1; i > 0; i--) { 
+    for (let i =Array.length-1; i > 0; i--) { 
         const j = Math.floor(Math.random() *(i+1)); 
         const temp = Array[i] 
         Array[i] = Array[j] 
@@ -187,19 +187,19 @@ generateBtn.addEventListener('click', ()=>{
         let funcARR= [];
 
         if(uppercaseCheck.checked){
-                funcARR.push(generateUpperCase());    
+                funcARR.push(generateUpperCase);    
         }
 
         if(lowercaseCheck.checked){
-                funcARR.push(generatteLowerCase());    
+                funcARR.push(generatteLowerCase);    
         }
 
         if(numberCheck.checked){
-                funcARR.push(generateRandomNumber());    
+                funcARR.push(generateRandomNumber);    
         }
 
         if(symbolCheck.checked){
-                funcARR.push(generateSymbol());    
+                funcARR.push(generateSymbol);    
         }
 
         //compulsory addition
