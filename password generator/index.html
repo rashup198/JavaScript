@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="display_container">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay >
+
+            <button> 
+                <span data-copy-msg>Copied</span>
+                <img src="copy-svgrepo-com.svg" alt="copy" height="23" width="23">
+            </button>
+
+
+            <div class="input_container">
+
+                <!-- password legth section -->
+
+                <div class="length_container">
+                    <p>Password LEngth</p>
+                    <p data-leghtNumber>0</p>
+                </div>
+
+                <!-- slider -->
+                
+                <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+                <!-- checkboxl -->
+                <div class="">
+
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase"> Includes Uppercase Letter</label>
+                </div>
+                <div class="">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase"> Includes Lowercase Letter</label>
+                </div>
+
+                <div class="">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers"> Includes Numbers </label>
+                </div>
+
+                
+                <div class="">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols"> Includes Symbols </label>
+                </div>
+
+                <!-- strength -->
+
+                <div class="strength_container">
+                    <p>Strength</p>
+
+                    <div class="" data_indicator>
+
+                    </div>
+                </div>
+
+
+                <!-- generate password button -->
+
+                <button class="generateButton">Generate Password</button>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
