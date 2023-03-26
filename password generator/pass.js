@@ -18,7 +18,7 @@ const symbol= "~!@#$%^&*()_+`:;<>?/,.{}|[]\/*";
 let passoword ="";
 
 let passowordLenght=10;
-let checkCount=1;
+let checkCount=0;
 handleSlider();
 //  set strength circle to grey 
 
@@ -103,6 +103,20 @@ setTimeout( () => {
 }, 2000);
 }
 
+function shuffelPassword(Array){
+    //fisher yates Method
+    for (let i =a.length-1; i > 0; i--) { 
+        const j = Math.floor(Math.random() *(i+1)); 
+        const temp = Array[i] 
+        Array[i] = Array[j] 
+        Array[j] = temp ;
+     } 
+     let str = "";
+     Array.forEach((el)=>
+        (str+=el));
+        return str;
+}
+
 function handleCheckBoxChange(){
     checkCount=0;
     allcheckbox.forEach((checbox)=>{
@@ -136,8 +150,87 @@ copyBtn.addEventListener("click",()=>{
 } )
 
 generateBtn.addEventListener('click', ()=>{
+        //none of  the checkbox are selected 
+        if(checkCount<=0){
+            return;
+        }
+        if(passowordLenght<checkCount){
+            passowordLenght=checkCount;
+            handleSlider();
 
-})
+        } 
+        // let's  start the journey to find new passoword
+
+        //remove old password
+        console.log("Starting the Journey");
+        passoword=""; 
+
+        //lets put the stuff mentioned by the checkboxed
+
+        // if(uppercaseCheck.checked){
+        //     passoword +=generateUpperCase();
+        // }
+
+        // if(lowercaseCheck.checked){
+        //     passoword +=generatteLowerCase();
+        // }
+
+        // if(numberCheck.checked){
+        //     passoword +=generateRandomNumber();
+        // }
+
+        // if(symbolCheck.checked){
+        //     passoword +=generateSymbol();
+        // }
 
 
+        let funcARR= [];
 
+        if(uppercaseCheck.checked){
+                funcARR.push(generateUpperCase());    
+        }
+
+        if(lowercaseCheck.checked){
+                funcARR.push(generatteLowerCase());    
+        }
+
+        if(numberCheck.checked){
+                funcARR.push(generateRandomNumber());    
+        }
+
+        if(symbolCheck.checked){
+                funcARR.push(generateSymbol());    
+        }
+
+        //compulsory addition
+
+        for (let i = 0; i < funcARR.length; i++) {
+            passoword += funcARR[i]();
+            
+        }
+        
+        console.log("Compulsory addition done");
+        //remaing addition
+
+        for(let i=0; i<passowordLenght-funcARR.length; i++){
+            let randIndex = getRndInterget(0,funcARR.length);
+            console.log("random index" + randIndex);
+            passoword += funcARR[randIndex]();
+        }
+        console.log("Remaning addition done");
+        //shuffel the generated password
+
+        passoword= shuffelPassword(Array.from(passoword));
+        console.log("Suffling dine");
+        // show in UI
+
+        passwordDisplay.value=passoword
+
+        console.log("UI addtion done");
+        //calculate the password strength
+
+        calcStrength();
+
+         
+
+    });
