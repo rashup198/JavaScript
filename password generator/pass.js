@@ -21,7 +21,7 @@ let passowordLenght=10;
 let checkCount=0;
 handleSlider();
 //  set strength circle to grey 
-
+setIndicator("#ccc")
 // set passoword length
 function handleSlider(){
 

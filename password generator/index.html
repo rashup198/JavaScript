@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Password Generator</h1>
 
         <div class="display_container">
-            <input readonly placeholder="Password" class="display" data-passwordDisplay >
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
 
-            <button data-copy> 
+            <button data-copy>
                 <span data-copy-msg></span>
-                <img src="copy-svgrepo-com.svg" alt="copy" height="23" width="23" >
+                <img src="copy-svgrepo-com.svg" alt="copy" height="23" width="23">
             </button>
 
-
+        </div>
             <div class="input_container">
 
                 <!-- password legth section -->
@@ -29,7 +32,7 @@
                 </div>
 
                 <!-- slider -->
-                
+
                 <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
 
                 <!-- checkboxl -->
@@ -48,7 +51,7 @@
                     <label for="numbers"> Includes Numbers </label>
                 </div>
 
-                
+
                 <div class="">
                     <input type="checkbox" id="symbols">
                     <label for="symbols"> Includes Symbols </label>
@@ -59,7 +62,7 @@
                 <div class="strength_container">
                     <p>Strength</p>
 
-                    <div class="" data_indicator>
+                    <div class="indicator" data_indicator>
 
                     </div>
                 </div>
@@ -70,10 +73,11 @@
                 <button class="generateButton">Generate Password</button>
 
             </div>
-        </div>
+        
     </div>
-    
+
 
     <script src="pass.js"></script>
 </body>
+
 </html>
