@@ -139,5 +139,112 @@ h1 {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
+   box-shadow: 0px 0px 12px 1px rgb(211, 30, 30);
     
+}
+
+.generateButton{
+    width: 100%;
+    height: 40px;
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(285, 91%, 52%);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid rgb(237, 237, 29);
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+     
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1rem;
+}
+.check input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border:  1px solid var(--vb-cyan);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+}
+
+.check input:checked{
+    background-color: var(--vb-cyan);
+
+}
+
+.check input:checked::before{
+    content: '✔';
+    position: absolute; 
+    color: var(--dk-text);
+    font-size: 1.1rem;
+    font-weight:bolder;
+    left: 30%;
+    top: -3.5px;
+    transform: translateX(-10%);
+    
+}
+
+.check label{
+    color: white;
+    font-size: 1.25rem;
+}
+
+.slider{
+    appearance: none; 
+    width: 100%;
+    height: 0.75rem;
+    cursor: pointer;
+    background-color: var(--lt-voilet);
+    border-radius: 1rem;
+    margin-top:2rem ;
+    margin-bottom: 1.5rem;
+    background-image: linear-gradient(var(--vb-voilet), var(--vb-voilet));
+    background-repeat: no-repeat;
+    border:none;
+    outline: none;
+    
+}
+
+.slider::-webkit-slider-thumb{
+    position: relative;
+   appearance: none;
+   height: 2rem;
+   width: 2rem;
+   border-radius: 50%;
+   background-color: var(--vb-yellow);
+   cursor: pointer;
+   margin-top: -3px;
+   box-shadow: 0px 0px 20px 0px rgb(239, 239, 70);
+   transition: all 100ms ease-in;
+
+}
+
+.slider:focus{
+    outline: 2px solid rgb(254, 254, 111);
+}
+.slider::-webkit-slider-thumb:hover{
+    outline: 2px solid rgb(255, 255, 127);
+    background-color: var(--dk-voilet);
+    box-shadow: 0px 0px 20px 0px rgb(239, 239, 70);
+}
+
+.copybtn{
+  
+   color: transparent;
+   border: none;
+  
+}
+.tooptip{
+    color: white;
+    background-color: aqua;
+}
+.tooptip.active{
+    opacity: 1;
+    transform: scale(1);
 }
