@@ -46,3 +46,21 @@ let course = courses.find(function(course){
 //     course.naam=='Love';
 // })
 console.log(course);
+
+// for of
+let arr=[10,12,23,54,67,89,90];
+for(let value of arr){
+    console.log(value);
+}
+
+// for each
+arr.forEach(function(number){
+    console.log(number);
+})
+
+
+
+let arr1=[2,3,4,65,21,45,47,2312,]
+
+const joined = arr1.join('-');
+console.log(joined);
