@@ -63,3 +63,66 @@ let courcee = cources.find(function(courcee){
     return courcee.no==1;
 })
 console.log(courcee);
+
+
+
+let num2 =[2,43,5,21,423,123,435,345]
+num2.pop();
+console.log(num2);
+
+
+
+// emptying an array 
+
+ let arr2 =[1,2,3,4,5]
+
+ let ar3 =  arr2;
+
+ arr2.length=0;
+
+ console.log(arr2);
+
+
+//  combining and slicing arrays
+
+
+let one =[1,2,3,4,5,6,7,8,9];
+
+let two =[10,11,12,13,14,15,16,17];
+let combined = one.concat(two);
+ console.log(combined);
+
+
+ let sliced = combined.slice(2,4);
+
+ console.log(sliced);
+
+// slicing an object
+
+ let rangler =[
+    {no:1, name:'love'},
+    {no:2, name:'rashu'},
+    {no:3, name:'riya'},
+    {no:4, name:'rahul'},
+    {no:5, name:'hero'},
+    {no:6, name:'raju'},
+
+]
+
+let sl = Array.prototype.slice.call(rangler, 4);
+console.log(sl);
+
+
+// itrating in array
+let arrrr =[1,2,3,4,5,6,7];
+
+// forof
+
+for (let iterator of arrrr) {
+    console.log(iterator);
+}
+
+
+// foreach
+
+arrrr.forEach (numberss=>console.log(numberss))
