@@ -126,3 +126,42 @@ for (let iterator of arrrr) {
 // foreach
 
 arrrr.forEach (numberss=>console.log(numberss))
+
+let numb5=[1,2,-1,-3];
+filterd = numb5.filter(function(value){
+    return value>=0;
+})
+//filterd = numb5.filter(value=> value>=0);
+console.log(filterd);
+
+
+//maping
+
+//it maps each element of array to something else
+
+
+let map_num =[7,8,9,10];
+
+let ite = map_num.map(function(value){
+    return 'student_no' + value;
+})
+
+
+console.log(ite);
+
+
+// maping with object
+
+num_obj =[1,2,9,-1];
+
+let filterd_obj= num_obj.filter(function(value){
+    return value>=0;
+})
+
+let items = filterd_obj.map(function(numm){
+    let obj = {value:numm}
+        return obj;
+    
+})
+
+console.log(items);
