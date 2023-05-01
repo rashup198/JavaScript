@@ -185,5 +185,15 @@ console.log(person2.fullname);
 
 
 
+for (var i = 0; i <10; i++) {
+ 
+}
 
+console.log(i);
+ 
+//reduce in jS
 
+let arr=[1,2,3,56,1];
+
+let total_sum = arr.reduce((accumlator , curr_val)=> accumlator+curr_val,0);
+console.log(total_sum);
