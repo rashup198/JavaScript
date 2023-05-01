@@ -134,18 +134,56 @@ console.log(fullname());
 
 let person1={
     fname :'rashu',
-    lname :'pandey' 
+    lname :'pandey',
+    get fullname(){
+        return `${person1.fname} ${person1.lname}`;
+    },
+    set fullname(value){
+        let parts =value.split(' ');
+        this.fname=parts[0];
+        this.lname= parts[1];
+
+    } 
 }
 
 console.log(person);
 
 
-function fullname(){
-    return `${person.fname} ${person.lname}`
+console.log(person1.fullname);
+
+
+
+// try and catch
+
+
+let person2={
+    fname :'rashu',
+    lname :'pandey',
+    get fullname(){
+        return `${person1.fname} ${person1.lname}`;
+    },
+    set fullname(value){
+        if(typeof value !==String){
+            throw new Error('you have not entered a string')
+        }
+        let parts =value.split(' ');
+        this.fname=parts[0];
+        this.lname= parts[1];
+
+    } 
 }
 
-//the above function is read only
+try{
+    person2.fullname='Hello ji';
+}
 
-console.log(fullname());
+catch (e){
+alert(e);
+}
+
+console.log(person2.fullname);
+
+
+
 
 
