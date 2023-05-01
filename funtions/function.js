@@ -107,3 +107,45 @@ function intrest(p,r=5,y=10){
     return p*r*y/100;
 }
 console.log(intrest(1000,6 ));
+
+
+
+//Getter and setter 
+// getter-> access properties
+// setter-> change or mutate properties 
+
+
+
+let person={
+    fname :'rashu',
+    lname :'pandey' 
+}
+
+console.log(person);
+
+
+function fullname(){
+    return `${person.fname} ${person.lname}`
+}
+
+//the above function is read only
+
+console.log(fullname());
+
+let person1={
+    fname :'rashu',
+    lname :'pandey' 
+}
+
+console.log(person);
+
+
+function fullname(){
+    return `${person.fname} ${person.lname}`
+}
+
+//the above function is read only
+
+console.log(fullname());
+
+
