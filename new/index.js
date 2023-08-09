@@ -106,3 +106,18 @@ even(arrEve);
   Newarr= del(arrdel, ele);
 
   console.log(Newarr);
+
+
+  console.log("async loop");
+
+  function asyncfu(arrasync){
+    for(var i=0; i<arrasync.length; i++){
+        setTimeout(() => {
+            console.log(arr[i]);
+        },1000);
+    }
+  }
+
+  var arrasync=[12,23,12];
+
+  asyncfu(arrasync);
