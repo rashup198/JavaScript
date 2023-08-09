@@ -87,5 +87,22 @@ function even(arrEve) {
 }
 
 var arrEve =[12,143,31,14,23,34];
+even(arrEve);
 
-even(arrEve)
+// ------------------
+
+ console.log("delete element in an array");
+
+ function del(arrdel, ele) {
+    for(var i=0; i<arrdel.length; i++){
+        if(arrdel[i]==ele){
+            arrdel.splice(i,1);
+        }
+    }
+    return arrdel;
+ }
+ var arrdel = [12,23,2312,123,1,23,12,3123,13]
+ var ele = 23
+  Newarr= del(arrdel, ele);
+
+  console.log(Newarr);
