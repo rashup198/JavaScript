@@ -110,14 +110,10 @@ even(arrEve);
 
   console.log("async loop");
 
-  function asyncfu(arrasync){
-    for(var i=0; i<arrasync.length; i++){
+    for(var i=0; i<5; i++){
         setTimeout(() => {
-            console.log(arr[i]);
-        },1000);
+            console.log(i);
+        },3000);
     }
-  }
 
-  var arrasync=[12,23,12];
 
-  asyncfu(arrasync);
