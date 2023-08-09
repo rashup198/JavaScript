@@ -57,15 +57,35 @@ for (var i=0; i<=10; i++){
     console.log(i);
 }
 
-console.log("first 10 event number");
+console.log("2d array");
 
-var b =0;
-
-
-while(b<20){
-    if(b%2==0){
-        console.log(b);
-        b++
+function printarray(arr){
+    for (var i=0; i<arr.length; i++){
+        for (var j=0; j<arr[0].length; j++){
+            console.log(arr[i][j]);
+        }
     }
 }
 
+var arr = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+
+printarray(arr);
+
+
+console.log("printing the even number in the given array");
+
+function even(arrEve) {
+    for(var i=0; i<arrEve.length; i++){
+        if (arrEve[i]%2==0) {
+            console.log(arrEve[i]);
+        }
+    }
+}
+
+var arrEve =[12,143,31,14,23,34];
+
+even(arrEve)
