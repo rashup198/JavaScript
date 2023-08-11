@@ -190,4 +190,48 @@ var d = function() {
 }
 d();
 
-log
+console.log("named function expression");
+
+var b = function xyz(){
+    var ar=[12,23,5,6,74,34]    
+    for(var i=0; i<ar.length; i++){
+        console.log(ar[i]);
+        // console.log(xyz);
+    }
+}
+b();
+
+
+console.log("diff b/w parameter and arrgument");
+
+var b = function(param1, param2){
+    console.log("the value of param1+param2 is: "+ (param1+param2));
+}
+
+b(2,3)
+
+console.log("first class function");
+
+var b = function(param1){
+    console.log(param1);
+    console.log("this is the main function");
+}
+
+b(function(){
+    console.log("this is inside other function");
+})
+
+// ------------
+
+console.log("another method to demonstrate it");
+
+var b = function(param1) {
+    console.log("this is inside the main function");
+    console.log(param1);
+}
+
+function xyz() {
+    console.log("im inside the xyz function");
+}
+
+b(xyz);
