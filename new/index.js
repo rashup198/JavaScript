@@ -155,3 +155,10 @@ for (var key in obj) {
     console.log(key, obj[key]);
    console.log(key,obj[key].name);
 }
+
+console.log("callback function");
+
+setTimeout(function() {
+   console.log("this is printed after 5 sec"); 
+},5000);
+    
