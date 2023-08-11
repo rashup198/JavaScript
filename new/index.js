@@ -162,3 +162,32 @@ setTimeout(function() {
    console.log("this is printed after 5 sec"); 
 },5000);
     
+
+console.log("first class fuction");
+console.log("function statement and expression");
+
+function a() {
+    console.log("a called");
+}
+a();
+var b = function () {
+    console.log("b called");
+}
+
+b();
+
+// the function statement follows the hoisting while the funtion expression
+// does not follows the hoisting 
+
+console.log("anonymus function");
+
+// a function without any name is anonymus function it is used a value in JS
+
+var d = function() {
+    for(var i=0; i<=5; i++){
+        console.log(i);
+    }
+}
+d();
+
+log
