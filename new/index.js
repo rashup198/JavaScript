@@ -113,7 +113,45 @@ even(arrEve);
     for(var i=0; i<5; i++){
         setTimeout(() => {
             console.log(i);
-        },3000);
+        },1000);
     }
+  
+// --------------
 
 
+console.log("foreach loop");
+
+
+var num=[2,3,4,3,2,1,4,3,35,3];
+
+num.forEach(function(i){
+    console.log(i+2);
+});
+
+
+
+console.log("forin loop");
+
+
+var obj =[{
+    name:"Rashu",
+    age:20,
+    city:"Bhopal"
+},
+{
+    name:"Ramesh",
+    age:29,
+    city:"Sehore"
+},
+{
+    name:"Raju",
+    age:25,
+    city:"Ratlam"
+}
+]
+
+
+for (var key in obj) {
+    console.log(key, obj[key]);
+   console.log(key,obj[key].name);
+}
