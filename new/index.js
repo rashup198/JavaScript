@@ -235,3 +235,37 @@ function xyz() {
 }
 
 b(xyz);
+
+
+console.log("how arrays are made behind the scenes");
+
+var ab=[12,34,5,6,7,8,2];
+
+console.log(typeof(ab));
+//this is will give object because it created the array as 
+
+var cd= {
+    0:12,
+    1:34,
+    2:5,
+    3:6,
+    4:7,
+    5:6,
+    6:2
+}
+console.log(cd);
+
+ab[-1]= 2;
+console.log(ab);
+
+console.log("delete object prop");
+
+
+var fg ={
+    name:"Rashu",
+    age:20,
+    city:"Sehore"
+}
+
+delete fg.age
+console.log(fg);
