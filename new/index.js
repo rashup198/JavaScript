@@ -269,3 +269,16 @@ var fg ={
 
 delete fg.age
 console.log(fg);
+
+console.log("how to copy reference value");
+
+
+var af =[12,4,5,4,634,5,6,32];
+var bf =[...af]
+
+bf.pop();
+console.log(af);
+console.log(bf);
+
+
+  
