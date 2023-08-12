@@ -280,5 +280,16 @@ bf.pop();
 console.log(af);
 console.log(bf);
 
+var t={
+    name:"Rashu",
+    age:20,
+    city:"Bhopal"
+}
 
-  
+var copyt={...t};
+
+copyt.name="pandey";
+copyt.age=34;
+copyt.city="Sehore"
+console.log(t);
+console.log(copyt);
