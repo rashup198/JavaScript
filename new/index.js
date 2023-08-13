@@ -280,11 +280,14 @@ bf.pop();
 console.log(af);
 console.log(bf);
 
-var t={
+var t=[{
     name:"Rashu",
     age:20,
     city:"Bhopal"
-}
+},
+{name:"riya",
+age:18,
+city:"Bhopal"}]
 
 var copyt={...t};
 
