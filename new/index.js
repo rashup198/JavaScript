@@ -296,3 +296,20 @@ copyt.age=34;
 copyt.city="Sehore"
 console.log(t);
 console.log(copyt);
+
+
+console.log("Turthy and falsy");
+
+
+if(8){
+    console.log("yes");
+}
+else{
+    console.log("no");
+}
+
+if (0) {
+    console.log("yes");
+} else {
+    console.log("no");    
+}
