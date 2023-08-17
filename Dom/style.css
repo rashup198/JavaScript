@@ -1,3 +1,27 @@
 h1{
     font-size: 70px ;
+    font-weight: 700;
+}
+#bulb{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+button{
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    margin: 50px;
+}
+
+#box{
+    height: 500px;
+    width: 200px;
+
+    background-color: chartreuse;
 }
