@@ -1,3 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-container {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    ;
+    padding: 20px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#next{ 
+    margin-top: 20px;
+     width: 200px;
+    
+}
