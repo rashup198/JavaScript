@@ -313,3 +313,23 @@ if (0) {
 } else {
     console.log("no");    
 }
+
+
+console.log("callback function");
+
+setTimeout(function x(){
+    console.log("this is printed after 5 sec");         
+}, 5000);
+
+function z(y){
+    console.log("printing z");
+    y();
+}
+
+ z(function y(){
+    console.log("printing y");
+ })
+
+ document.getElementById("rashu").addEventListener("click", function(){
+    console.log("the button is clicked");
+ })
