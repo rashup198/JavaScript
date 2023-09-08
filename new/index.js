@@ -353,22 +353,29 @@ magic();
 
 console.log("Math js  ");
 
-
 const num1 = 100;
 console.log(num1);
-
 const num2 = new Number(200);
 console.log(num2);
-
 console.log(num2.toFixed(2));
 console.log(num2.toString().length);
 console.log(Math.abs(-100));
 console.log(Math.pi);
 console.log(Math.round(100.324));
 console.log(Math.ceil(100.324));
-
 console.log((Math.random()*10)+1);
 console.log("fixed");
 console.log(Math.floor(Math.random()*10)+1);
 
+console.log("date and time");
+
+let date = new Date();
+console.log(date); 
+console.log(date.getDate());
+console.log(date.toDateString());   
+console.log(typeof(date));
+
+let date1 = new Date(2023,0,23);
+console.log(date1.toDateString());
+console.log(date1.toLocaleString());
 
