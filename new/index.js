@@ -333,3 +333,42 @@ function z(y){
  document.getElementById("rashu").addEventListener("click", function(){
     console.log("the button is clicked");
  })
+
+
+console.log("question 1");
+
+function magic (){
+    var x="im in magic"
+    function insideMagic(){
+        console.log(x);
+        var x="im inside magic"
+    }
+    insideMagic();
+}
+magic();
+
+// this will print undefined because the variable x is hoisted and it is declared
+// but not defined so it will print undefined you can check it by commenting the
+// insideMagic function
+
+console.log("Math js  ");
+
+
+const num1 = 100;
+console.log(num1);
+
+const num2 = new Number(200);
+console.log(num2);
+
+console.log(num2.toFixed(2));
+console.log(num2.toString().length);
+console.log(Math.abs(-100));
+console.log(Math.pi);
+console.log(Math.round(100.324));
+console.log(Math.ceil(100.324));
+
+console.log((Math.random()*10)+1);
+console.log("fixed");
+console.log(Math.floor(Math.random()*10)+1);
+
+
