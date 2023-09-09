@@ -379,3 +379,44 @@ let date1 = new Date(2023,0,23);
 console.log(date1.toDateString());
 console.log(date1.toLocaleString());
 
+ 
+// how to add two arrays
+
+const array1 =["rashu", "riya", "rani"];
+const array2 =["Pandey", "Sharma", "shukla"]
+
+const new_array= array1.concat(array2);
+console.log(new_array);
+
+// spread operator
+const new_array1 = [...array1,...array2];
+console.log(new_array1);
+ 
+// what to do if you have array inside an array
+
+const anotherArray= [1,2,3,4,[5,6,3,2,4],5,6,7,8,9,[2,4,5,3,22],5,6,3,2];
+const realArray = anotherArray.flat(8);  
+
+console.log(realArray);
+
+// how to convert any node/object/element into array
+
+console.log(Array.from("rashu"));
+console.log(Array.isArray(realArray));
+console.log(Array.isArray("Rashu"));
+
+// how to get a array from se set of element 
+
+const var1=100;
+const var2=200;
+const var3=300;
+
+const array3 = Array.of(var1,var2,var3);
+console.log(array3);
+
+
+// how to create a array with 100 elements
+
+const array4 = Array(100);
+console.log(array4);
+
