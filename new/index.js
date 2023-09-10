@@ -420,3 +420,65 @@ console.log(array3);
 const array4 = Array(100);
 console.log(array4);
 
+
+//Objects
+
+const mySym = Symbol("key1");
+
+const person = {
+    name:"Rashu",
+    "full name":"Rashu Pandey",
+    age:20,
+    [mySym]: "key1",
+    city:"Bhopal",
+    hobbies:["coding", "reading", "singing"],
+    address:{
+        street:"Bhopal",
+        pincode:462001
+    }
+}
+
+console.log(person.age);
+console.log(person.hobbies[1]);
+console.log(person.address.pincode);
+console.log(person["name"]);
+console.log(person["full name"]);  
+console.log(person[mySym]);
+
+// how to add a new property in the object
+
+person.email="rashup198@gmail.com";
+console.log(person);
+
+// how to freeze an object
+
+// const person1 = Object.freeze(person);
+
+person.name="Riya";
+console.log(person);
+
+// you can notice now to object is not getting changed because it is freezed
+
+//object  Functions
+
+person.greet = function(){
+    console.log("hello");
+}
+person.greet1 = function(){
+    console.log(`hello  ${this.name} and your age is ${this["age"]}`);
+}
+console.log(person.greet());
+console.log(person.greet1());
+
+
+// how to delete a property from an object
+
+delete person.greet;
+console.log(person);
+
+// how to get the keys of an object
+
+console.log(Object.keys(person));
+
+  
+ 
