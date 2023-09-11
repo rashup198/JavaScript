@@ -480,5 +480,141 @@ console.log(person);
 
 console.log(Object.keys(person));
 
-  
+// how to create a new object 
+
+const newPerson = {};
+
+newPerson.id = 1;
+newPerson.name = "Rahul";
+newPerson.age = 22;
+newPerson.city = "Sehore";
+newPerson.hobbies = ["coding", "reading", "singing"];
+newPerson.isLogin = true;
+
+console.log(newPerson);
+
+  //how to nesting in a object
+
+  const user ={
+    id:1,
+    fullname:{
+        userFullname:{
+            firstName:"Rashu",
+            lastName:"Pandey"
+        }
+    }
+  }
  
+  console.log(user.fullname.userFullname.firstName);
+  console.log(user.fullname.userFullname.lastName);
+
+//   how merge two object
+
+const obj1 = {
+    name:"Rashu",
+    age:20,
+    city:"Bhopal"
+}
+
+const obj2 = {
+    name:"Riya",
+    age:18,
+    city:"Sehore"
+}
+
+const obj3 = Object.assign({},obj1,obj2); // we are giving empty object as a target and all the obj1 and obj2 as a source it is a good practice to give empty object as a target
+console.log(obj3);
+
+// using spread operator
+
+const obj4 = {...obj1,...obj2}; 
+console.log(obj4);
+
+// how to get the keys and values of an Object
+
+console.log(Object.keys(obj4));  // it will always return the array
+console.log(Object.values(obj4));
+
+
+//destructing of an object
+
+const course = {
+    name:"JS",
+    price: "1000",
+    duration:"2 months"
+}
+
+const{name,price,duration} = course;
+console.log(name);
+console.log(price);
+console.log(duration);
+
+//function
+
+function saymyname(){
+    console.log("R");
+    console.log("A");
+    console.log("S");
+    console.log("H");
+    console.log("U");       
+}
+
+console.log(saymyname());
+
+// diffrence b/w log and return
+
+function add(a,b){
+    console.log(a+b);
+}
+const result = add(2,3);
+
+console.log("the result is: ",result); //this will print undefined because the add function is not returning anything
+
+function add1(a,b){
+    return a+b;
+}
+const result1 = add1(2,3);
+console.log("the result is: ",result1);
+
+function loginUserMessage(username){
+    if(username.length<2){
+    return `the username ${username} is too short`;
+    }
+    else{
+        return `Welcome ${username}`;
+    }
+}
+
+console.log(loginUserMessage("R"));
+
+// funtion with object
+
+//rest operator
+
+function calcluateCartPrice(...prices){
+    return prices;
+    
+}
+ 
+console.log(calcluateCartPrice(100,200,300,400,500));
+
+const user1 = {
+    username :"Rashu",
+    price:1000,
+}
+
+function handleUser(anyuser){
+    return `the user "${anyuser.username}" has to pay ${anyuser.price}`;
+}
+
+console.log(handleUser(user1));
+
+// function with arrays
+
+const arr1 = [1,2,3,4,5,6,7,8,9,10];
+
+function returnArray(getArray){
+    return `the array is ${getArray}`;
+}
+
+console.log(returnArray(arr1));
