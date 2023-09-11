@@ -618,3 +618,42 @@ function returnArray(getArray){
 }
 
 console.log(returnArray(arr1));
+
+// this and arrow function
+
+const  userRashu = {
+    name:"Rashu",
+    price:1000,
+
+    welcomeMeassage:function(){
+        console.log(`Welcome to the platform ${this.name}`);  //this. is used to access the property of the object in which it is present 
+    }
+}
+
+userRashu.welcomeMeassage();   // .this does not work inside a function
+userRashu.name="Riya";
+userRashu.welcomeMeassage();
+
+const twonum =(a,b)=>{
+    return a+b;
+
+}
+
+console.log(twonum(2,3)); 
+
+
+//imidiately invoked function expression  (IIFE)
+
+// this is used when you have imidiately invoke a function and you dont want to call it again i.e your DataBase connection function or any other function
+
+(function(){
+    //this is named IIFE
+    console.log("this is IIFE");
+})();
+
+( (naam)=>{
+    //this is unnamed IIFE
+    console.log(`DB is connected to ${naam}`);
+})("RAshu");
+
+// global scope ke pollution se problem hoti hai kai bbar to usss polution/declaration ko hatane ke liye IIFE ka use kiya jata hai
