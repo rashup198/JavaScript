@@ -657,3 +657,198 @@ console.log(twonum(2,3));
 })("RAshu");
 
 // global scope ke pollution se problem hoti hai kai bbar to usss polution/declaration ko hatane ke liye IIFE ka use kiya jata hai
+
+// content flow in JS
+
+//nullish coalescing operator (??) it is used to check the null and undefined value
+
+let value;
+
+value = 0 ?? 10;    
+let value1;
+value1 = null ?? 10;
+console.log(`the value is ${value1}`);
+console.log(`the value is ${value}`);
+
+// ternary operator
+
+let value2 = 10;
+let value3 = 20;
+
+let resulttt = value2>value3 ? "value2 is greater" : "value3 is greater";
+console.log(resulttt);
+
+//loops
+
+// while 
+
+while(value2<20){
+    console.log(`the value: ${value2}`);
+    value2++;
+}
+
+// loops on arrays
+
+const arr2 = [1,2,3,4,5,6,7,8,9,10];
+
+// for of
+
+for (const num of arr2) {
+    console.log(num);
+}
+
+const greeting = "hello jii";
+
+for (const greet of greeting) {
+    console.log(greet);
+}
+    
+//maps
+
+const map1 = new Map();
+
+map1.set("name","Rashu");
+map1.set("age",20);
+map1.set("city","Bhopal");
+
+console.log(map1);
+
+for (const key of map1) {
+    console.log(key);
+}
+
+// for of loop on Object
+
+const myObj = {
+    name:"Rashu",
+    age:20,
+    city:"Bhopal"
+}
+
+// for (const [key,value] of myObj) {
+//     // console.log(key,value);
+// }
+
+// this is not working because the object is not iterable
+
+// this can be done by using for in loop
+
+for (const key in myObj) {
+    console.log(key,myObj[key]);
+}
+
+// for each loop
+
+const arr3 = [1,2,3,4,5,6,7,8,9,10];
+
+arr3.forEach( (item)=>{
+    console.log(item);
+})
+
+function print(item, index, arr3){
+    console.log(item, index, arr3);
+}
+
+arr3.forEach(print);
+
+// for each loop on object
+
+const myObj1 = {
+    name:"Rashu",
+    age:20,
+    city:"Bhopal"
+}
+
+Object.keys(myObj1).forEach( (key)=>{
+    console.log(key,myObj1[key]);
+}
+
+)
+
+// map filter and reduce
+
+const arr4 = [1,2,3,4,5,6,7,8,9,10];
+
+const newArr4 = arr4.filter( (item)=>
+  { return item>5
+}
+)
+console.log(newArr4);
+
+
+const newnum=[]
+arr4.forEach((num)=>{
+    if(num >4){
+        newnum.push(num)
+    }
+})
+
+console.log(newnum);
+
+const books = [
+    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+  ];
+   
+  let newbook = books.filter((bk)=>{
+    return bk.genre==="History"
+  })
+
+   newbook = books.filter((bk)=>{
+    return bk.edition>2007 || bk.genre=="History"
+   })
+  console.log(newbook);
+ 
+  //maps
+  const Myarr=[1,2,3,4,5,6,7,8,9]
+  const newarrs= Myarr.map((num)=>{
+    return num +" Rahsu"
+  }) 
+ console.log(newarrs);
+
+ const latestArr = Myarr.map((nums)=>
+    nums*10).map((nums)=>nums+5).filter((nums)=> nums>50)
+
+console.log(latestArr);
+
+//reduce 
+
+const reduceArr = [1,2,3,4]
+
+const initial =0;
+
+const sumInitial = reduceArr.reduce((accumaltor, crrvalue)=>
+  accumaltor+crrvalue,0
+)
+
+console.log(sumInitial );
+
+//Reduce on  objects
+
+const reduceObj =[
+    {
+        itemName :"Js",
+        price :1999
+    },
+    {
+        itemName :"Py",
+        price :999
+    },
+    {
+        itemName :"Kotlin",
+        price :4999
+    },
+]
+
+const reduceobject = reduceObj.reduce((acc,item)=>{
+   return acc+item.price,0
+})
+
+console.log(reduceObj);
