@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:wght@100;200;300;500;600&family=Quicksand:wght@600;700&family=Raleway:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    background: #fff;
+}
+#home{
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+}
+#nav img{
+    width: 100px;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-left: 30px;  
+}
+
+#home #homeMain{
+    
+    width: 100%;
+    padding: 15vw 14vw;
+    height: 100%;
+}
+
+#homeMain h1{
+font-weight: 400;
+font-size:2.5vw;
+}
+
+.headings{
+    display: flex;
+    gap: 40px;
+}
+#homeMain .headings h1{
+    color:transparent;
+    -webkit-text-stroke: 0.01px #000;
+    font-size: 6vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+    letter-spacing: -2px;
+}
+#homeLast{
+    padding: 5vw 15vw;
+}
+
+#homeLast p{
+    font-size: 1.7vw;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+#homeLast p::selection{
+    background: #000;
+    color: #fff;
+}
+#featured{
+    padding: 5vw 15vw;
+}
+
+#featured h1{
+    font-size: 3vw;
+    line-height: 1.5;
+    font-weight: 700;
+}
+#fImages{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+#fleft{
+    width: 45%;
+    overflow: auto;
+    height: inherit;
+
+}
+#fright{
+    width: 45%;
+    height: inherit;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#fright .images{
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
+.fleftelm{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.fleftelm h1{
+font-size: 2.5vw;
+line-height: 1;
+font-weight: 700;
+text-transform: capitalize;
+margin:  1.5vw 0;
+}
+.fleftelm p{  
+    opacity: 0.8;
+}
+.fleftelm h3{
+font: 0.8vw;
+font-weight: 400;
+}
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btndiv button{
+    padding: 1vw 2vw;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background-color:white;
+    font-size: 1vw;
+    font-weight: 600;
+    
+}
