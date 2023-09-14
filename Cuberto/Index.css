@@ -63,8 +63,6 @@ font-size:2.5vw;
     gap: 40px;
 }
 #homeMain .headings h1{
-    color:transparent;
-    -webkit-text-stroke: 0.01px #000;
     font-size: 6vw;
     font-weight: 900;
     margin-bottom: 1vw;
@@ -84,6 +82,12 @@ font-size:2.5vw;
     background: #000;
     color: #fff;
 }
+
+*::selection{
+    background: #000;
+    color: #fff;
+}
+
 #featured{
     padding: 5vw 15vw;
 }
@@ -140,6 +144,24 @@ margin:  1.5vw 0;
 font: 0.8vw;
 font-weight: 400;
 }
+#fright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+}
+
+#fright .images {
+    width: 90%;
+    height: 90%;
+}
+
+#fright .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .btndiv{
     display: flex;
     align-items: center;
@@ -152,6 +174,59 @@ font-weight: 400;
     border: 1px solid #000;
     background-color:white;
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: 600;   
+}
+#dev{
+width: 100%;
+padding: 5vw 15vw;
+}
+#dev h1{
+    font-size: 3.5vw;
+    line-height: 1.5;
+    font-weight: 700;
+}
+#dev p{
+font-size: 1.8vw;
+font-weight: 600;
+margin-top: 3vw;
+}
+#slides{
+    display: flex;
+    gap: 40px;
+    padding: 5vw 10vw;
+    justify-content: space-between;
+}
+.slide{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slide .img{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
     
+}
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .tag{
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #eae7e7;
+    width: fit-content;
+    border-radius: 100px;
+}
+.slide h3{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.headings h1:hover{
+    color: #545454;
+    transition: 0.2s ease-in-out;
 }
