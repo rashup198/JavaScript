@@ -113,7 +113,6 @@ font-size:2.5vw;
 #fright{
     width: 45%;
     height: inherit;
-    border: 2px solid green;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -121,7 +120,7 @@ font-size:2.5vw;
 #fright .images{
     width: 90%;
     height: 90%;
-    background-color: red;
+    background-color: white;
 }
 .fleftelm{
     width: 100%;
