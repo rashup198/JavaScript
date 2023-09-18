@@ -831,7 +831,6 @@ const sumInitial = reduceArr.reduce((accumaltor, crrvalue)=>
 console.log(sumInitial );
 
 //Reduce on  objects
-
 const reduceObj =[
     {
         itemName :"Js",
@@ -846,9 +845,16 @@ const reduceObj =[
         price :4999
     },
 ]
-
 const reduceobject = reduceObj.reduce((acc,item)=>{
    return acc+item.price,0
 })
 
 console.log(reduceObj);
+
+// events in JS
+
+//  js events to study 
+// type , timestamp., defaultPrevented,
+// EventTarget, toElement, srcElement, currentTarget,
+// clientX, clientY,screenX, screenY,altKey, ctrlKey,
+//  shiftKey,keyCode
