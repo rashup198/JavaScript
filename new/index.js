@@ -858,3 +858,90 @@ console.log(reduceObj);
 // EventTarget, toElement, srcElement, currentTarget,
 // clientX, clientY,screenX, screenY,altKey, ctrlKey,
 //  shiftKey,keyCode
+
+
+//promise
+
+const promise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("the async code is running");
+        resolve();
+    },3000)
+})
+
+promise.then(()=>{
+    console.log("the promise is resolved");
+})
+
+
+new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("the async code 1 is running");
+        resolve();
+    },4000)
+}).then(()=>{
+    console.log("the promise 1 is resolved");
+})
+
+const promiseThree = new Promise((resolve,reject)=>{    
+    setTimeout(() => {
+       resolve({name:"RashuPandey",age:20})   
+    },2000) 
+})
+ 
+promiseThree.then((data)=>{
+    console.log(data);
+})
+
+const promiseFour = new Promise((resolve, reject)=>{
+    let error = true;
+
+    if(!error){
+        resolve({username:"RahulTiwari", code:"1212" })
+    }else{
+        reject("Error Detected ")
+    }
+},4000)
+
+promiseFour.then((user)=>{
+    console.log(user.username);
+})
+
+const promiseFive = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        let error= false;
+        if (!error) {
+            resolve({username:"JavaScript", pass:"121212"})
+        } else {
+            reject("Error: Js went Wrong")
+        }
+    },2000)
+})
+
+async function consumePromiseFive(){
+  const response = await promiseFive
+    console.log(response);
+}
+consumePromiseFive()
+
+async function getAllUsers(){
+    try {
+        const response = await   fetch("https://jsonplaceholder.typicode.com/users")
+        const data =await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+   
+}
+getAllUsers();
+
+// using .then
+
+fetch("https://jsonplaceholder.typicode.com/users").then((response)=>{
+    return response.json();
+}).then((data)=>{
+    console.log(data);
+}).catch((error)=>{
+    console.log(error);
+})
