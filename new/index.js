@@ -945,3 +945,23 @@ fetch("https://jsonplaceholder.typicode.com/users").then((response)=>{
 }).catch((error)=>{
     console.log(error);
 })
+
+// magic of Prototype
+
+let myHeros =["thor","ironman","captain_america","hulk","spiderman"];
+
+let heroPower={
+    thor:"thunder",
+    ironman:"money",
+    captain_america:"shield",
+    hulk:"strength",
+    spiderman:"spider web"
+
+    getSpiderPower: function(){
+        console.log(`the power of ${this.spiderman} is ${this.spiderman}`);
+    }
+}
+     Object.prototype.rashu="pandey";
+
+     
+
